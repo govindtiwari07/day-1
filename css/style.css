@@ -1,0 +1,403 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: govind;
+  src: url(../font/Poppins-Medium.ttf);
+}
+
+:root {
+  --button_color: #89745f;
+  --white: white;
+  --black: black;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+/* section one start */
+#one {
+  background-image: url(../five_img/1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 3rem;
+  position: relative;
+}
+
+#one>h2 {
+  color: var(--white);
+  font-family: govind;
+  font-weight: 900;
+  line-height: 1;
+}
+
+#one>.bottom {
+  width: 100px;
+  height: 100px;
+  padding: 1.5rem 2.5rem;
+}
+
+#one>.bottom>i {
+  display: block;
+  font-size: 1.3rem;
+  color: var(--white);
+}
+
+#one>nav {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0rem 2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+#one>nav>img {
+  width: 200px;
+}
+
+#one>nav>button {
+  width: 200px;
+  height: 50px;
+  font-size: 1.1rem;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  background-color: var(--button_color);
+  cursor: pointer;
+  color: var(--white);
+  font-family: govind;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+}
+
+#one>nav>button:hover {
+  transform: scaleX(1.1);
+}
+
+#one>nav>button>span {
+  font-weight: 200;
+  transition: 0.2s;
+}
+
+#one>nav>button>span:hover {
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+
+#one>#aq {
+  position: absolute;
+  bottom: 0;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+/* section one end */
+/* section two start  */
+#two {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+#two>canvas {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+/* section two end  */
+/* section three start  */
+#three {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+}
+
+#three>.three_box {
+  width: 100%;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ar {
+  flex-shrink: 0;
+  height: 250px;
+}
+
+.lo {
+  font-size: 15vw;
+  font-family: govind;
+
+}
+
+/* section three end */
+/* section four start  */
+#four {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#four>.four_box {
+  width: 550px;
+  height: 850px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#four>.four_box>h3 {
+  text-align: center;
+  font-family: govind;
+}
+
+#four>.four_box>p {
+  text-align: center;
+  font-family: goivnd;
+  font-size: 1.2rem;
+}
+
+#four>.four_box>button {
+  padding: 20px 30px;
+  border-radius: 50px;
+  border: none;
+  font-size: 1.2rem;
+  color: white;
+  background-color: var(--button_color);
+  cursor: pointer;
+}
+
+#four>.four_box>button:hover {
+  opacity: 0.9;
+}
+
+#four .four_box_img {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.img_one {
+  position: absolute;
+  z-index: 2;
+}
+
+#img_one,
+#img_two,
+#img_three {
+  position: absolute;
+  z-index: 1;
+  width: 500px;
+}
+
+/* section four end  */
+/* section five start  */
+#five {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+#five>.five_one {
+  width: 50%;
+  height: 90%;
+  transform-origin: left;
+  display: flex;
+  overflow: hidden;
+}
+
+#five>.five_one>img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+#five>.five_one1 {
+  width: 550px;
+  height: 680px;
+  position: absolute;
+  display: flex;
+  left: 30%;
+  overflow: hidden;
+}
+
+#five>.five_one1>img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+#five>.five_two {
+  width: 50%;
+  height: 100%;
+  background-color: gold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 120px;
+}
+
+#five>.five_two>h1 {
+  font-size: 9rem;
+  font-family: govind;
+}
+
+#five>.five_two>h3 {
+  font-size: 1rem;
+  font-family: govind;
+}
+
+/* section five end  */
+/* section six start  */
+#six {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+#six>.six_main {
+  width: 100%;
+  height: 100%;
+  background-image: url(../two_img/1.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+#six>.six_main>.six_main_one {
+  width: 600px;
+  height: 700px;
+  background-color: black;
+  background-image: url(../two_img/2.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.six_s{
+  color: var(--white);
+}
+.ay1 {
+  position: absolute;
+  top: 15%;
+  left: 5%;
+  font-size: 6rem;
+  font-family: govind;
+}
+
+.ay2 {
+  position: absolute;
+  top: 25%;
+  right: 5%;
+  font-size: 6rem;
+  font-family: govind;
+}
+
+.ay3 {
+  position: absolute;
+  top: 55%;
+  left: 5%;
+  font-size: 6rem;
+  font-family: govind;
+
+}
+
+.ay4 {
+  position: absolute;
+  top: 65%;
+  right: 5%;
+  font-size: 6rem;
+  font-family: govind;
+
+}
+.six_main_one_img{
+  width: 500px;
+  height: 600px;
+  background-image: url(../two_img/3.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: absolute;
+  z-index: 999;
+}
+/* section six end  */
+footer{
+  width: 100%;
+  height: 100vh;
+  background-image: url(../six_img/1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+footer>img{
+  width: 500px;
+  flex-shrink: 0;
+  transform: translateX(300%);
+  position: relative;
+}
+footer>h1{
+  position: absolute;
+  font-size: 15rem;
+  font-family: govind;
+  right: 5%;
+  text-align: center;
+  line-height: 1;
+  text-transform: uppercase;
+  color: white;
+}
